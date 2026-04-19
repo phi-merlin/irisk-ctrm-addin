@@ -1,85 +1,98 @@
-IRISK CTRM Add-In
+## IRISK CTRM Add-In
 
-Commodity Trading & Risk Management system built in Microsoft Excel (VBA + database backend)
+**Internal Commodity Trading & Risk Infrastructure**
+**(Excel/VBA Front-End | Centralized Risk & Trade Database)**
 
-Overview
+---
 
-The IRISK CTRM Add-In is a lightweight Commodity Trading and Risk Management (CTRM) system fully integrated within Microsoft Excel.
+## Overview
 
-It combines:
+IRISK CTRM is a proprietary, lightweight trading and risk infrastructure designed for desk-level deployment within Excel.
 
-trade capture
-real-time valuation
-risk analytics
-flexible reporting
+It provides a unified environment for:
 
-within a familiar spreadsheet environment, supported by a centralized database (Microsoft Access / cloud backend).
+* Trade lifecycle management
+* Real-time P&L and exposure tracking
+* Risk measurement and stress testing
+* Desk-level reporting and analytics
 
-Key Features
-📥 Trade Capture
-Booking of physical and financial commodity trades
-Support for:
-multiple commodities
-multiple currencies
-formula-based pricing
-financial instruments (for hedging)
-Integration of broker statements and external data
-💰 Valuation & P&L
-Mark-to-market valuation
-Real-time P&L tracking
-Cost accrual and deal-level analysis
-Scenario analysis on pricing structures
-⚠️ Risk Management
-Position reporting
-Sensitivity analysis (Greeks / stress scenarios)
-Value-at-Risk (historical & parametric)
-Potential Future Exposure (PFE)
-📊 Reporting & Analytics
-Excel-integrated reporting and dashboards
-Custom functions for:
-data retrieval
-pricing
-risk metrics
-One-click analysis embedded in spreadsheets
-Full flexibility for ad-hoc analysis
-🗄️ Data Management
-Centralized trade and market data storage
-Backend options:
-Microsoft Access
-Cloud database (e.g. Azure)
-Real-time data sharing across users and spreadsheets
-System Architecture
-Frontend: Microsoft Excel (VBA Add-In)
-Backend: Relational database (Access / cloud)
-Integration: Excel functions, VBA modules, external data sources
-Design Philosophy
-Flexibility: leverage Excel as a modeling and reporting layer
-Usability: minimal training required for end users
-Speed: instant access to trading and risk metrics
-Cost-efficiency: lightweight alternative to large CTRM systems
-Use Cases
-Commodity trading houses (small to mid-sized)
-Producers and consumers
-Trade finance and banking
-Risk and valuation teams
-Functional Scope
-Front Office:
-trade capture
-deal structuring
-Middle Office:
-valuation
-market and credit risk
-Back Office:
-inventory valuation
-reporting and dashboards
-Objective
+The system is engineered to replicate core CTRM functionality without reliance on heavyweight enterprise platforms.
 
-This project demonstrates the design and implementation of a practical CTRM solution, focusing on:
+---
 
-integrating trading workflows into Excel
-building real-time valuation and risk tools
-enabling flexible analytics for decision-making
-Notes
-Developed using Excel VBA and database integration
-Designed as a modular and extensible system
-Illustrates how lightweight tools can replicate core CTRM functionalities
+## Core Capabilities
+
+### Trade Capture & Lifecycle Management
+
+* Full trade booking (physical + derivatives)
+* Multi-asset commodity coverage
+* Structured pricing models
+* Hedge linkage and allocation logic
+* External trade import (brokers / confirmations)
+
+---
+
+### Valuation & P&L Engine
+
+* Mark-to-market valuation engine
+* Real-time P&L computation at deal and portfolio level
+* Accrual handling and cost allocation
+* Scenario-based valuation shifts
+
+---
+
+### Risk Analytics
+
+* Position aggregation across books and portfolios
+* Sensitivities (Greeks / risk factors)
+* Historical and parametric VaR
+* Exposure metrics (PFE, stress scenarios)
+
+---
+
+### Reporting Layer
+
+* Fully Excel-native reporting environment
+* Embedded pricing and risk functions (VBA UDF layer)
+* Automated dashboards for desk monitoring
+* Ad-hoc analytical flexibility for traders
+
+---
+
+## Architecture
+
+* **Front End:** Excel VBA Add-In (trader interface layer)
+* **Core Data Layer:** Centralized relational database
+* **Integration Layer:** VBA services, Excel UDFs, data connectors
+* **Market Data:** External feeds + manual inputs
+
+---
+
+## Design Principles
+
+* **Desk-centric design:** optimized for trader workflows
+* **Low latency analytics:** immediate recalculation of exposure and P&L
+* **Transparency:** fully auditable trade and valuation logic
+* **Modularity:** components can be extended independently
+* **Cost-efficient architecture:** avoids enterprise CTRM overhead
+
+---
+
+## Deployment Context
+
+* Trading desks (commodity derivatives / physicals)
+* Risk and valuation teams
+* Structured trading environments
+* Hybrid front-to-middle office workflows
+
+---
+
+## Strategic Intent
+
+IRISK CTRM is intended as a **desk-owned system-of-record and analytics layer**, bridging execution, risk, and reporting within a single Excel-native environment.
+
+It is designed to:
+
+* Reduce dependency on enterprise CTRM systems
+* Increase trader autonomy in analytics
+* Improve speed of decision-making at desk level
